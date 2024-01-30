@@ -8,21 +8,32 @@ class BoxColor extends React.Component {
       backgroundColor: `rgb(${r}, ${g}, ${b})`,
     };
 
+    let line1 = null;
+    let line2 = null;
+
+    if (r === 255 && g === 0 && b === 0) {
+      line1 = (
+        <div className='boxcolor-box' style={colorStyle}>
+          rgb: ({r}, {g}, {b}) 
+          <br/>#ff0000
+        </div>
+      );
+    } else if (r === 128 && g === 255 && b === 0) {
+      line2 = (
+        <div className='boxcolor-boxs' style={colorStyle}>
+          rgb: ({r}, {g}, {b}) 
+          <br/>#80ff00
+        </div>
+      );
+    }
+
     return (
       <div>
-      <div className='boxcolor-box' style={colorStyle}>
-        rgb: ({r}, {g}, {b}) 
-        <br/>#ff0000
+        {line1}
+        {line2}
       </div>
-      <div className='boxcolor-boxs' style={colorStyle}>
-      rgb: ({r}, {g}, {b}) 
-      <br/>#80ff00
-    </div>
-    </div>
     );
   }
 }
-
-
 
 export default BoxColor;
