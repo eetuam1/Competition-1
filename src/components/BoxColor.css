@@ -1,0 +1,21 @@
+.boxcolor-box {
+    border: 2px solid black;
+    padding: 12px;
+    margin: 12px 0;
+    text-align: center;
+    width: 77.5%;
+    height: 110px;
+    font-size: 35px;
+    color: white;
+  }
+  
+.boxcolor-boxs {
+  border: 2px solid black;
+  padding: 12px;
+  margin: 12px 0;
+  text-align: center;
+  width: 77.5%;
+  height: 110px;
+  font-size: 35px;
+  color: black;
+}

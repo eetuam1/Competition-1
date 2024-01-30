@@ -1,0 +1,11 @@
+.greetings-box {
+    border: 2px  solid black;
+    margin: 12px 0;
+    width: 80%;
+  }
+  
+.greetings {
+    margin: 15px;
+    font-size: 24px;
+  }
+
