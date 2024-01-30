@@ -1,40 +1,59 @@
-.credit-cards-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px auto; 
-    max-width: 1000px; 
-  }
-  
-  .credit-card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 300px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    height: 180px;
-  }
-  
-  .card-type {
-    font-size: 24px;
-  }
-  
-  .card-number {
-    font-size: 18px;
-  }
-  
-  .card-expiration {
-    font-size: 14px;
-  }
-  
-  .card-bank {
-    font-size: 16px;
-  }
-  
-  .card-owner {
-    font-size: 16px;
-  }
-  
+/* CreditCard.css */
+.credit-card-container {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.credit-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  height: 180px;
+}
+
+.card-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  max-width: 80px;
+}
+
+.card-number {
+  font-size: 24px;
+  margin-bottom: center;
+}
+
+.card-expiration-bank-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.card-expiration-bank {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-expiration {
+  font-size: 16px;
+}
+
+.card-bank {
+  font-size: 16px;
+  margin-left: 50px;
+}
+
+.card-owner {
+  font-size: 16px;
+}

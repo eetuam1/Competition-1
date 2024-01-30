@@ -1,74 +1,49 @@
-import React from 'react';
-import './CreditCard.css';
+// CreditCard.js
+import React from "react";
+import "./CreditCard.css";
 
-class CreditCard extends React.Component {
-  render() {
-    const {
-      type,
-      number,
-      expirationMonth,
-      expirationYear,
-      bank,
-      owner,
-      bgColor,
-      color,
-    } = this.props;
+const CreditCard = ({
+  type,
+  number,
+  expirationMonth,
+  expirationYear,
+  bgColor,
+  color,
+  bank,
+  owner,
+}) => {
+  const formatNumber = (number) => {
+    return "●●●● ●●●● ●●●● " + number.slice(-4);
+  };
 
-    const lastFourDigits = number.slice(-4);
+  const getCardLogo = () => {
+    if (type.toLowerCase() === "visa") {
+      return "https://upload.wikimedia.org/wikipedia/commons/5/5a/Visa_2014.svg";
+    } else if (type.toLowerCase() === "master card") {
+      return "https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg";
+    } else {
+      return null;
+    }
+  };
 
-    return (
-      <div
-        className="credit-card"
-        style={{
-          backgroundColor: bgColor,
-          color: color,
-        }}
-      >
-        <div className="card-type">{type}</div>
-        <div className="card-number">**** **** **** {lastFourDigits}</div>
-        <div className="card-expiration">Expires {expirationMonth}/{expirationYear}</div>
-        <div className="card-bank">{bank}</div>
+  return (
+    <div
+      className="credit-card"
+      style={{ backgroundColor: bgColor, color: color }}
+    >
+      <img src={getCardLogo()} alt={type} className="card-logo" />
+      <div className="card-number">{formatNumber(number)}</div>
+      <div className="card-expiration-bank-holder">
+        <div className="card-expiration-bank">
+          <div className="card-expiration">
+            Expires {expirationMonth}/{expirationYear % 100}
+          </div>
+          <div className="card-bank">{bank}</div>
+        </div>
         <div className="card-owner">{owner}</div>
       </div>
-    );
-  }
-}
-
-const CreditCardsContainer = () => (
-    <div className="credit-cards-container">
-      <CreditCard
-        type="Visa"
-        number="0123456789018845"
-        expirationMonth={3}
-        expirationYear={2021}
-        bank="BNP"
-        owner="Maxence Bouret"
-        bgColor="#11aa99"
-        color="white" 
-      />
-      
-      <CreditCard
-        type="Master Card"
-        number="0123456789010995"
-        expirationMonth={3}
-        expirationYear={2021}
-        bank="N26"
-        owner="Maxence Bouret"
-        bgColor="#eeeeee"
-        color="#222222"
-      />
-      
-      <CreditCard
-        type="Visa"
-        number="0123456789016984"
-        expirationMonth={12}
-        expirationYear={2019}
-        bank="Name of the Bank"
-        owner="Firstname Lastname"
-        bgColor="#ddbb55"
-        color="white" 
-      />
     </div>
   );
-  
-  export default CreditCardsContainer;
+};
+
+export default CreditCard;
