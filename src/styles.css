@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   padding-left: 10px;
-  max-width: 1260px;
+  margin-right: 13px;
 }
 
 .picture {
@@ -24,8 +24,8 @@
 .greetings-box {
   border: 2px solid black;
   margin: 12px 0;
-  width: 80%;
-  margin-left: 13px;
+  margin-left: 10px;
+  margin-right: 13px;
 }
 
 .greetings {
@@ -38,8 +38,8 @@
   border: 2px solid black;
   padding: 12px;
   margin: 12px 0;
-  width: 78.7%;
   margin-left: 10px;
+  margin-right: 13px;
   font-weight: bold;
 }
 
@@ -50,10 +50,9 @@
   padding: 12px;
   margin: 12px 0;
   text-align: center;
-  width: 78.7%;
-  height: 110px;
   font-size: 35px;
   margin-left: 10px;
+  margin-right: 13px;
 }
 
 .boxcolor-box {
