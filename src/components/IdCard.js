@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./IdCard.css"; 
+import "../styles.css"; 
 
 const IdCard = ({ lastName, firstName, gender, height, birth, picture }) => {
   // Convert height from cm to meters

@@ -1,5 +1,5 @@
 import React from 'react';
-import './BoxColor.css';
+import '../styles.css';
 
 class BoxColor extends React.Component {
   render() {

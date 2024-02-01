@@ -1,6 +1,6 @@
 // CreditCard.js
 import React from "react";
-import "./CreditCard.css";
+import "../styles.css";
 
 const CreditCard = ({
   type,

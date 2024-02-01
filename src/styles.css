@@ -1,0 +1,125 @@
+/* ID Card Section */
+.id-card {
+  border: 4px solid #000000;
+  padding: px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  max-width: 1260px;
+}
+
+.picture {
+  margin-right: 16px;
+  padding-left: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.picture img {
+  width: 180px;
+}
+
+/* Greetings Section */
+.greetings-box {
+  border: 2px solid black;
+  margin: 12px 0;
+  width: 80%;
+  margin-left: 13px;
+}
+
+.greetings {
+  margin: 15px;
+  font-size: 24px;
+}
+
+/* Random Box Section */
+.random-box {
+  border: 2px solid black;
+  padding: 12px;
+  margin: 12px 0;
+  width: 78.7%;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/* Box Color Box Section */
+.boxcolor-box,
+.boxcolor-boxs {
+  border: 2px solid black;
+  padding: 12px;
+  margin: 12px 0;
+  text-align: center;
+  width: 78.7%;
+  height: 110px;
+  font-size: 35px;
+  margin-left: 10px;
+}
+
+.boxcolor-box {
+  color: white;
+}
+
+.boxcolor-boxs {
+  color: black;
+}
+
+/* Credit Card Section */
+.credit-card-container {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.credit-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  height: 180px;
+}
+
+.card-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  max-width: 80px;
+}
+
+.card-number {
+  font-size: 24px;
+  margin-bottom: center;
+}
+
+.card-expiration-bank-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.card-expiration-bank {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-expiration {
+  font-size: 16px;
+}
+
+.card-bank {
+  font-size: 16px;
+  margin-left: 50px;
+}
+
+.card-owner {
+  font-size: 16px;
+}

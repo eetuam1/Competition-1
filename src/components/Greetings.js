@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Greetings.css";
+import "../styles.css";
 
 const Greetings = ({ lang, children }) => {
   const greetingsMap = {
